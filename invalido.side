@@ -1,0 +1,140 @@
+{
+  "id": "608af8e9-0e01-4836-a543-a905b7dd66cd",
+  "version": "2.0",
+  "name": "EntInvalidas",
+  "url": "http://127.0.0.1//num/index.html",
+  "tests": [{
+    "id": "4999ac07-979c-4122-93af-687dec61275c",
+    "name": "Untitled",
+    "commands": [{
+      "id": "e3f4f45f-168f-4e3f-a50d-89aa8dc8a8d6",
+      "comment": "",
+      "command": "open",
+      "target": "http://127.0.0.1//num/index.html",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "eb6590a8-fb1f-420f-bbfe-65f15b100c5c",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "792x824",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f82d48c1-629a-4873-a65e-86685011d1bf",
+      "comment": "",
+      "command": "click",
+      "target": "id=insert",
+      "targets": [
+        ["id=insert", "id"],
+        ["css=#insert", "css:finder"],
+        ["xpath=//input[@id='insert']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c3cd5d2a-8524-4793-be0d-db2c20686f89",
+      "comment": "não aparece no input (func. esperada)",
+      "command": "type",
+      "target": "id=insert",
+      "targets": [],
+      "value": "e"
+    }, {
+      "id": "12a57ce3-b59d-40dc-989b-25d4b204ab0e",
+      "comment": "",
+      "command": "click",
+      "target": "id=bt",
+      "targets": [
+        ["id=bt", "id"],
+        ["css=#bt", "css:finder"],
+        ["xpath=//input[@id='bt']", "xpath:attributes"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4e399567-a055-47ff-a685-4c87b172273d",
+      "comment": "",
+      "command": "type",
+      "target": "id=insert",
+      "targets": [
+        ["id=insert", "id"],
+        ["css=#insert", "css:finder"],
+        ["xpath=//input[@id='insert']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "-1"
+    }, {
+      "id": "e6d31813-0cd4-436b-9e93-f6a5494d8c5d",
+      "comment": "",
+      "command": "click",
+      "target": "id=bt",
+      "targets": [
+        ["id=bt", "id"],
+        ["css=#bt", "css:finder"],
+        ["xpath=//input[@id='bt']", "xpath:attributes"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5b604f3c-e21f-4284-ae19-9c73e1871acd",
+      "comment": "",
+      "command": "assertAlert",
+      "target": "Valor -1 Fora Do Intervalo Especificado",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4b846754-cd36-4f1f-8ec5-7911eff98f64",
+      "comment": "",
+      "command": "type",
+      "target": "id=insert",
+      "targets": [
+        ["id=insert", "id"],
+        ["css=#insert", "css:finder"],
+        ["xpath=//input[@id='insert']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "101"
+    }, {
+      "id": "877dcffd-8254-44fa-b7d6-20005f1b62d9",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "id=insert",
+      "targets": [
+        ["id=insert", "id"],
+        ["css=#insert", "css:finder"],
+        ["xpath=//input[@id='insert']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "2b79e4c1-e25a-4ba9-9b48-d980b8b4c383",
+      "comment": "",
+      "command": "click",
+      "target": "id=bt",
+      "targets": [
+        ["id=bt", "id"],
+        ["css=#bt", "css:finder"],
+        ["xpath=//input[@id='bt']", "xpath:attributes"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "10d7d37e-2179-4913-a3e2-ab8f1d8f646c",
+      "comment": "",
+      "command": "assertAlert",
+      "target": "Valor 101 Fora Do Intervalo Especificado",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "07e23209-fb27-4aa5-b119-c14a13a32ce7",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["4999ac07-979c-4122-93af-687dec61275c"]
+  }],
+  "urls": ["http://127.0.0.1/", "http://127.0.0.1//num/index.html"],
+  "plugins": []
+}
